@@ -11,7 +11,6 @@ using SalesCRMApp.Models;
 
 namespace SalesCRMApp.Controllers
 {
-    [Authorize]
     public class LeadsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -22,6 +21,7 @@ namespace SalesCRMApp.Controllers
         }
 
         // GET: Leads
+        [Authorize(Roles = "Admin, Sales")]
         public async Task<IActionResult> Index()
         {
               return _context.SalesLead != null ? 
@@ -30,6 +30,7 @@ namespace SalesCRMApp.Controllers
         }
 
         // GET: Leads/Details/5
+        [Authorize(Roles = "Admin, Sales")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.SalesLead == null)
@@ -48,6 +49,7 @@ namespace SalesCRMApp.Controllers
         }
 
         // GET: Leads/Create
+        [Authorize(Roles = "Admin, Sales")]
         public IActionResult Create()
         {
             return View();
@@ -56,6 +58,7 @@ namespace SalesCRMApp.Controllers
         // POST: Leads/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Admin, Sales")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,Mobile,Email,Source")] SalesLeadEntity salesLeadEntity)
@@ -70,6 +73,7 @@ namespace SalesCRMApp.Controllers
         }
 
         // GET: Leads/Edit/5
+        [Authorize(Roles = "Admin, Sales")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.SalesLead == null)
@@ -88,6 +92,7 @@ namespace SalesCRMApp.Controllers
         // POST: Leads/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Admin, Sales")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName,Mobile,Email,Source")] SalesLeadEntity salesLeadEntity)
@@ -121,6 +126,7 @@ namespace SalesCRMApp.Controllers
         }
 
         // GET: Leads/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.SalesLead == null)
@@ -139,6 +145,7 @@ namespace SalesCRMApp.Controllers
         }
 
         // POST: Leads/Delete/5
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

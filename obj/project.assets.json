@@ -11026,11 +11026,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\akina\\source\\repos\\SalesCRMApp\\SalesCRMApp\\SalesCRMApp.csproj",
+      "projectUniqueName": "C:\\Users\\akina\\projects\\ASPNET\\SalesCRMApp\\SalesCRMApp\\SalesCRMApp.csproj",
       "projectName": "SalesCRMApp",
-      "projectPath": "C:\\Users\\akina\\source\\repos\\SalesCRMApp\\SalesCRMApp\\SalesCRMApp.csproj",
+      "projectPath": "C:\\Users\\akina\\projects\\ASPNET\\SalesCRMApp\\SalesCRMApp\\SalesCRMApp.csproj",
       "packagesPath": "C:\\Users\\akina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\akina\\source\\repos\\SalesCRMApp\\SalesCRMApp\\obj\\",
+      "outputPath": "C:\\Users\\akina\\projects\\ASPNET\\SalesCRMApp\\SalesCRMApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\akina\\AppData\\Roaming\\NuGet\\NuGet.Config",

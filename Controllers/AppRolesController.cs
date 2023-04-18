@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace SalesCRMApp.Controllers
 {
+    [Authorize(Roles ="Admin")]
     public class AppRolesController : Controller
     {
         // define a _roleManager variable

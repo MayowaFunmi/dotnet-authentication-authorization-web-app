@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3O+vIkdWFXUY3fBii2FERASup0XXeMANqCy5XjbbZw6FDBSw/O8ARedxgz+ptLL/lnUE6tK+qUxslgujJMaYgA==",
+  "dgSpecHash": "PsFdXSR3karHEWj/qG5PYME4lw7ROuFAWRHT/+ICrix0Th2jc+ZOuCrQmY1qmPXTuKtbDcz4OY5sTmQRmp/BWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\akina\\source\\repos\\SalesCRMApp\\SalesCRMApp\\SalesCRMApp.csproj",
+  "projectFilePath": "C:\\Users\\akina\\projects\\ASPNET\\SalesCRMApp\\SalesCRMApp\\SalesCRMApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\akina\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\akina\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
